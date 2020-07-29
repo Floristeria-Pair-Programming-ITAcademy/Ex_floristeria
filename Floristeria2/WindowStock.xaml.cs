@@ -24,11 +24,12 @@ namespace Floristeria2
         public WindowStock(Florist F)
         {
             InitializeComponent();
-            nombreFlori = F.Nombre;
+            Flori.Text = F.Nombre;
             listaflores.ItemsSource = F.ListaFlower; 
             listatrees.ItemsSource = F.ListaTree;     //conectamos las listas  .cs con las ListBox del .xaml
             listadeco.ItemsSource = F.ListaDeco;
         }
+
 
         
 }
